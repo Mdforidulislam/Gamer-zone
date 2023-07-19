@@ -10,7 +10,7 @@ body{
 /* shard option  */
 .max-container{
     max-width: 1300px;
-    margin: 50px auto;
+    margin: auto;
 }
 header,main{
     background-color: #fdf6fd;
@@ -26,6 +26,9 @@ header,main{
     font-weight: 600;
     border: none;
     margin-top: 40px;
+}
+.padding-option{
+    padding:50px 0px;
 }
 /* header section customization */
 .header-main, .header-log-text, .header-icon-box, .header-right, .header-button>ul{
@@ -260,44 +263,141 @@ img.play-game-any {
 }
 
 /* career sectiojn customization */
+/* career custom design */
+.career-background-setup{
+    background-color: #ff42a5;
+}
+.career-main-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Your previous CSS styles */
 
 .career-img img {
     width: 100%;
+    height: auto;
 }
-.career-info p{
-    width: 500px;
+
+.career-info p {
     color: #FFF;
     font-size: 18px;
     font-weight: 400;
     margin-top: 24px;
-
+    text-align: center; /* Adjust the alignment for responsive design */
 }
-.career-info h3{
+
+.career-info h3 {
     color: #FFF;
-    font-size: 48px;
+    font-size: 36px; /* Decrease the font size for responsive design */
     font-weight: 700;
+    text-align: center; /* Adjust the alignment for responsive design */
 }
-.career-info-list{
-    display: flex;
-    justify-content: space-between;
-    gap: 97px;
-    margin-top: 50px;
 
+.career-info-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow the items to wrap on small screens */
+    justify-content: center; /* Center the content for responsive design */
+    gap: 30px;
+    margin-top: 50px;
 }
+
 .career-list-item li {
     list-style: none;
     color: #FFF;
-    font-size: 20px;
+    font-size: 18px; /* Decrease the font size for responsive design */
     font-weight: 600;
-    line-height: 34px;
+    line-height: 30px; /* Decrease the line height for responsive design */
+    text-align: center; /* Adjust the alignment for responsive design */
 }
-.btn-primary1{
+
+.btn-primary1 {
     border-radius: 48px;
     background: #FFF;
     color: #ff42a5;
+    display: block; /* Display as a block to take full width on small screens */
+    margin: 20px auto; /* Center the button for responsive design */
+    padding: 16px 40px; /* Decrease the padding for responsive design */
+}
+
+.career-main-section {
+    padding: 60px 0px; /* Decrease the padding for responsive design */
+}
+
+/* Game features seciton */
+.game-features-main{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px 20px;
+    justify-content: center;
 }
 
 
+/* Hover effect */
+
+.features-card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 230px;
+    height: auto;
+}
+.features-card p {
+    margin-left: 6px;
+}
+.features-card:hover {
+    border: 1px solid #ff42a5; 
+    border-radius: 50px;
+    background: transparent; 
+    transition: all 0.5s ease; 
+}
+.features-card:hover p {
+    color: black; 
+    font-size: 15px;
+}
+.features-card img{
+    margin-left: 10px;
+}
+ /* footer secition design */
+ footer{
+    background: #0B0223;
+ }
+ .footer-main{
+    padding: 120px 0px;
+ }
+ .footer-logo.new-footer-logo {
+    justify-content: center;
+    display: flex;
+    color: #f9f9f9;
+}
+.footer-list ul, .footer-terms ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 47px;
+    color: white;
+    list-style: none;
+    margin-top: 50px;
+    text-transform: capitalize;
+
+}
+.footer-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 80px;
+    font-size: 40px;
+}
+.footer-copy-right {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 79px;
+    color: white;
+    font-size: 14px;
+}
 
 /* ========================== Responsive section =============================== */
 /* mobile responsive section using media quariy  */
@@ -379,16 +479,11 @@ img.play-game-any {
     .play-instantly-main {
         padding: 5px 0px;
     }
+    .career-main-section {
+        flex-direction: column;
+    }
 }
-/* career custom design */
-.career-background-setup{
-    background-color: #ff42a5;
-}
-.career-main-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 /* responsive for mediam device or tablet */
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .header-main, .we-are-gamer-main {
