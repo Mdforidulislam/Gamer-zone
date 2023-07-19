@@ -401,13 +401,7 @@ img.play-game-any {
     text-transform: capitalize;
 
 }
-.header-main, .header-log-text, .header-icon-box, .header-right, .header-button>ul {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    justify-content: center;
-    color: white;
-}
+
 .footer-icon {
     display: flex;
     flex-wrap: wrap;
@@ -425,7 +419,10 @@ img.play-game-any {
     color: white;
     font-size: 14px;
 }
-
+.footer-icon-custom {
+    justify-content: center;
+    color: white;
+}
 
 /* ========================== Responsive section =============================== */
 /* mobile responsive section using media quariy  */
