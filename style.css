@@ -7,3 +7,390 @@ body{
     margin: 0px;
     padding: 0px;
 }
+/* shard option  */
+.max-container{
+    max-width: 1300px;
+    margin: 50px auto;
+}
+header,main{
+    background-color: #fdf6fd;
+}
+.btn-primary{
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    display: inline-flex;
+    padding: 21px 40px;
+    gap: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    margin-top: 40px;
+}
+/* header section customization */
+.header-main, .header-log-text, .header-icon-box, .header-right, .header-button>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.header-main{
+     padding: 37px 0px;
+}
+.header-button li {
+    list-style: none;
+}
+.header-button a{
+    color: #3C354F;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 12px;
+}
+.header-icon-box{
+    display: flex;
+    justify-content: space-evenly;
+    width: 262px;
+    height: 56px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+}
+.header-icon-custom, h3{
+    font-size: 45px;
+    font-weight: 700;
+}
+.header-icon-custom{
+    color: #ff42a5;
+}
+/* banner main section */
+.banner-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:200px;
+}
+.banner-info h3{
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.banner-info h2{
+    text-align: center;
+    font-size: 95px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner-info li{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: lowercase;
+    list-style: none;
+    padding-top: 18px;
+}
+.banner-img img{
+    width: 100%;
+}
+.btn-primary1 {
+    background: #4EC5F7;
+}
+/* we are gamner section */
+.we-are-gamer-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 52px;
+}
+.we-are-gamer-info, h3 ,p ,h5 ,strong{
+   text-align: right;
+   padding-top: 25px;
+}
+.we-are-gamer-info h3{
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.we-are-gamer-info p{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    width: 500px;
+}
+.we-are-gamer-info h5{
+    color: #534C64;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 500;
+}
+.we-are-gamer-img img{
+    width: 100%;
+}
+
+/* online game section design*/
+.online-game-img{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+   
+}
+
+.online-game-card {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+}
+.online-game-card img{
+    width: 100%;
+}
+.online-game-overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    border:3px solid #ff42a5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+.online-game-card:hover .online-game-overlay{
+    opacity: 1;
+}
+.online-game-overlay, .fa-regular{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.online-game-overlay span.text{
+    color: #fff;
+    font-size: 18px;
+}
+.online-game-title, .online-game-description{
+    text-align: center;
+}
+.online-game-description, .online-game-img-cap{
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+.online-game-img-cap{
+    text-align: left;
+}
+.online-game-custom, .online-game-title{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+}
+.online-game-custom{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* play intanted main */
+.play-instantly-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 284px;
+    padding: 120px 0px;
+}
+.play-instantly {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+img.play-img-2nd {
+    width: 267px;
+    height: 300px;
+    position: absolute;
+    margin-left: -104px;
+    margin-bottom: -90px;
+}
+.pay-instantly-info h3, .play-title-custom{
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+}
+.play-title-custom{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.play-instantly-description{
+    color: #534C64;
+    text-align: right;
+    font-weight: 400;
+}
+img.play-img-main {
+    width: 100%;
+}
+
+/* play-game-any time */
+img.play-game-any {
+    margin-left: 20%;
+    margin-bottom: -7%;
+}
+.pay-instantly-info.play-game-any h3, .play-game-any p {
+    text-align: left;
+}
+/* mobile responsive section using media quariy  */
+
+/* using responsive for mobile */
+@media screen and (max-width: 576px) {
+    .header-main, .header-right {
+        flex-direction: column;
+    }
+   .banner-main {
+        flex-direction: column-reverse;
+        gap: 100px;
+    }
+    .banner-img {
+        width: 70%;
+    }
+    .we-are-gamer-main {
+        flex-direction: column;
+    }
+    .we-are-gamer-info, h3, p, .we-are-gamer-im, .we-are-gamer-info h5{
+        text-align: center;
+    }
+    .we-are-gamer-info p {
+        width: 372px;
+    }
+    .online-game-img {
+        flex-direction: column;
+        align-items: center;
+    }
+    .online-game-card {
+        position: relative;
+        display: inline-block;
+        width: 450px;
+        height: 650px;
+        text-align: center;
+    }
+    .play-instantly-main{
+        flex-direction: column;
+    }
+    p.play-instantly-description {
+        text-align: center;
+        width: 379px;
+    }
+    .pay-instantly-info h3 {
+        text-align: center;
+    }
+    .play-instantly-main {
+        gap: 72px;
+    }
+    img.play-img-main {
+        width: 80%;
+    }
+    img.play-img-2nd {
+        width: 177px;
+        height: 210px;
+        margin-left: -73%;
+        margin-bottom: -9%;
+    }
+    .play-instantly {
+        justify-content: center;
+    }
+    .play-instantly-main {
+        padding: 5px 0px;
+    }
+}
+/* responsive for mediam device or tablet */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .header-main, .we-are-gamer-main {
+        flex-direction: column;
+    }
+   .banner-main {
+        flex-direction: column-reverse;
+        gap: 100px;
+    }
+    .banner-img {
+        width: 70%;
+    }
+    .we-are-gamer-info, h3, p, .we-are-gamer-img, .we-are-gamer-info h5{
+        text-align: center;
+    }
+    .we-are-gamer-info p {
+        width: 500px;
+    }
+    .we-are-gamer-img img {
+        width: 85%;
+    }
+    .online-game-card {
+        position: relative;
+        display: inline-block;
+        width: 450px;
+        height: 650px;
+        text-align: center;
+    }
+    .online-game-img {
+        flex-direction: column;
+        align-items: center;
+    }
+    .play-instantly-main.max-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+    p.play-instantly-description {
+        text-align: center;
+        width: 379px;
+    }
+    .pay-instantly-info h3 {
+        text-align: center;
+    }
+    img.play-img-2nd {
+        margin-left: -12%;
+        margin-bottom: -9%;
+    }
+}
+
+/* others Large Laptop size padding responsive  */
+@media screen and (min-width: 993px) and (max-width: 1299px){
+    .header-main, .banner-main {
+        padding: 32px 50px;
+    }
+    .online-game-img img {
+        width: 80%;
+    }
+    p.play-instantly-description {
+        text-align: center;
+        width: 379px;
+    }
+    .pay-instantly-info h3 {
+        text-align: center;
+    }
+    img.play-img-2nd {
+        margin-left: -8%;
+        margin-bottom: -8%;
+        width: 164px;
+        height: 219px;
+    }
+    .we-are-gamer-main {
+        padding: 0px 50px;
+    }
+    .play-instantly-main {
+        padding: 120px 38px;
+    }
+}
