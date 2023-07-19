@@ -28,7 +28,7 @@ header,main{
     margin-top: 40px;
 }
 .padding-option{
-    padding:50px 0px;
+    padding:50px 50px;
 }
 /* header section customization */
 .header-main, .header-log-text, .header-icon-box, .header-right, .header-button>ul{
@@ -101,7 +101,7 @@ header,main{
 .banner-img img{
     width: 100%;
 }
-.btn-primary1 {
+.btn-primary2 {
     background: #4EC5F7;
 }
 /* we are gamner section */
@@ -213,6 +213,9 @@ header,main{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.online-game-card p {
+    text-align: center;
+}
 /* play intanted main */
 .play-instantly-main {
     display: flex;
@@ -252,6 +255,9 @@ img.play-img-2nd {
 img.play-img-main {
     width: 100%;
 }
+p.play-instantly-description {
+    width: 500px;
+}
 
 /* play-game-any time */
 img.play-game-any {
@@ -272,8 +278,6 @@ img.play-game-any {
     justify-content: space-between;
     align-items: center;
 }
-/* Your previous CSS styles */
-
 .career-img img {
     width: 100%;
     height: auto;
@@ -284,54 +288,69 @@ img.play-game-any {
     font-size: 18px;
     font-weight: 400;
     margin-top: 24px;
-    text-align: center; /* Adjust the alignment for responsive design */
+    text-align: left;
+    max-width: 800px;
+    
 }
 
 .career-info h3 {
     color: #FFF;
-    font-size: 36px; /* Decrease the font size for responsive design */
+    font-size: 36px; 
     font-weight: 700;
-    text-align: center; /* Adjust the alignment for responsive design */
-}
+    text-align: left; 
 
+}
 .career-info-list {
     display: flex;
-    flex-wrap: wrap; /* Allow the items to wrap on small screens */
-    justify-content: center; /* Center the content for responsive design */
+    flex-wrap: wrap; 
+    justify-content: center; 
     gap: 30px;
     margin-top: 50px;
 }
 
-.career-list-item li {
+.career-list-item-1 li {
     list-style: none;
     color: #FFF;
-    font-size: 18px; /* Decrease the font size for responsive design */
+    font-size: 18px; 
     font-weight: 600;
-    line-height: 30px; /* Decrease the line height for responsive design */
-    text-align: center; /* Adjust the alignment for responsive design */
+    line-height: 30px; 
+    text-align: left; 
+}
+.career-list-item-2 li{
+    list-style: none;
+    color: #FFF;
+    font-size: 18px; 
+    font-weight: 600;
+    line-height: 30px;
+    text-align: right;
 }
 
 .btn-primary1 {
     border-radius: 48px;
     background: #FFF;
     color: #ff42a5;
-    display: block; /* Display as a block to take full width on small screens */
-    margin: 20px auto; /* Center the button for responsive design */
-    padding: 16px 40px; /* Decrease the padding for responsive design */
+    display: block; 
+    margin: 20px auto; 
+    padding: 16px 40px; 
+    display: inline-block;
+    margin-top: 52px;
 }
 
+
 .career-main-section {
-    padding: 60px 0px; /* Decrease the padding for responsive design */
+    padding: 60px 0px; 
 }
 
 /* Game features seciton */
-.game-features-main{
+.game-features-main {
     display: flex;
     flex-wrap: wrap;
-    gap:20px 20px;
+    gap: 51px 21px;
     justify-content: center;
 }
-
+.features-card img {
+    width: 24%;
+}
 
 /* Hover effect */
 
@@ -344,6 +363,7 @@ img.play-game-any {
 }
 .features-card p {
     margin-left: 6px;
+    font-size: 15px;
 }
 .features-card:hover {
     border: 1px solid #ff42a5; 
@@ -381,6 +401,13 @@ img.play-game-any {
     text-transform: capitalize;
 
 }
+.header-main, .header-log-text, .header-icon-box, .header-right, .header-button>ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    color: white;
+}
 .footer-icon {
     display: flex;
     flex-wrap: wrap;
@@ -398,6 +425,7 @@ img.play-game-any {
     color: white;
     font-size: 14px;
 }
+
 
 /* ========================== Responsive section =============================== */
 /* mobile responsive section using media quariy  */
@@ -417,7 +445,7 @@ img.play-game-any {
     .we-are-gamer-main {
         flex-direction: column;
     }
-    .we-are-gamer-info, h3, p, .we-are-gamer-im, .we-are-gamer-info h5{
+    .we-are-gamer-info, .we-are-gamer-im, .we-are-gamer-info h5{
         text-align: center;
     }
     .we-are-gamer-info p {
@@ -430,8 +458,14 @@ img.play-game-any {
     .online-game-card {
         position: relative;
         display: inline-block;
-        width: 450px;
-        height: 650px;
+        width: 330px;
+        height: 488px;
+        text-align: center;
+    }
+    .play-instantly-main.play-game-any-main.max-container.padding-option {
+        padding: 100px 0px;
+    }
+    .play-game-any h3 {
         text-align: center;
     }
     .play-instantly-main{
@@ -482,6 +516,14 @@ img.play-game-any {
     .career-main-section {
         flex-direction: column;
     }
+    .features-card {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 195px;
+        height: auto;
+    }
+
 }
 
 /* responsive for mediam device or tablet */
