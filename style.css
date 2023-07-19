@@ -377,7 +377,7 @@ img.play-game-any {
     transition: all 0.5s ease; 
 }
 .features-card:hover p {
-    color: black; 
+    color: #ff42a5; 
     font-size: 15px;
 }
 .features-card img{
@@ -530,8 +530,8 @@ img.play-game-any {
         text-align: center;
     }
     button.btn-primary.btn-primary1 {
-        display: block;
-    }
+    display: block;
+}
 
 }
 
