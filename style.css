@@ -108,7 +108,11 @@ header,main{
     align-items: center;
     gap: 52px;
 }
-.we-are-gamer-info, h3 ,p ,h5 ,strong{
+.we-are-gamer-info, 
+.we-are-gamer-info h3, 
+.we-are-gamer-info p, 
+.we-are-gamer-info h5, 
+.we-are-gamer-info strong{
    text-align: right;
    padding-top: 25px;
 }
@@ -254,6 +258,48 @@ img.play-game-any {
 .pay-instantly-info.play-game-any h3, .play-game-any p {
     text-align: left;
 }
+
+/* career sectiojn customization */
+
+.career-img img {
+    width: 100%;
+}
+.career-info p{
+    width: 500px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 24px;
+
+}
+.career-info h3{
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+}
+.career-info-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 97px;
+    margin-top: 50px;
+
+}
+.career-list-item li {
+    list-style: none;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 34px;
+}
+.btn-primary1{
+    border-radius: 48px;
+    background: #FFF;
+    color: #ff42a5;
+}
+
+
+
+/* ========================== Responsive section =============================== */
 /* mobile responsive section using media quariy  */
 
 /* using responsive for mobile */
@@ -316,6 +362,32 @@ img.play-game-any {
     .play-instantly-main {
         padding: 5px 0px;
     }
+    .play-game-any-main{
+        flex-direction: column-reverse;
+    }
+    .play-game-any p {
+        text-align: center;
+    }
+    .play-game-any h3 {
+        text-align: center;
+    }
+    img.play-game-any {
+      
+        margin-left: 69%;
+        margin-bottom: -9%;
+    }
+    .play-instantly-main {
+        padding: 5px 0px;
+    }
+}
+/* career custom design */
+.career-background-setup{
+    background-color: #ff42a5;
+}
+.career-main-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 /* responsive for mediam device or tablet */
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -363,6 +435,24 @@ img.play-game-any {
     img.play-img-2nd {
         margin-left: -12%;
         margin-bottom: -9%;
+    }
+    .play-game-any-main {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .play-game-any p {
+        text-align: center;
+    }
+    .play-game-any h3 {
+        text-align: center;
+    }
+    img.play-game-any {
+      
+        margin-left: 69%;
+        margin-bottom: -9%;
+    }
+    .play-instantly-main {
+        padding: 5px 0px;
     }
 }
 
