@@ -532,6 +532,11 @@ img.play-game-any {
     button.btn-primary.btn-primary1 {
     display: block;
 }
+.game-features-main {
+    gap: 39px 2px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
 
 }
 
